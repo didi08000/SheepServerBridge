@@ -1,25 +1,26 @@
-name: MinewebBridge
+name: SheepLink-Site
 main: fr.vmarchaud.mineweb.bukkit.BukkitCore
 version: 3.0.8
 api-version: 1.15
 authors:
   - ThisIsMac
   - Shyrogan
+  - didi08000
 softdepend:
   - ProtocolLib
 load: STARTUP
 commands:
   mineweb:
-    description: Commands to manage MineWebBridge
+    description: Commands to manage SheepLink Site
     usage: |
-      Use /help mineweb [subcommand] for more information
-      /mineweb reset - Reset the link
-      /mineweb port <port> - Setup custom port
+      Use /help linksite [subcommand] for more information
+      /linksite reset - Reset the link
+      /linksite port <port> - Setup custom port
   mineweb reset:
     description: Reset plugin configuration
-    usage: /mineweb reset
+    usage: /linksite reset
     permission: mineweb.reset
   mineweb port:
     description: Setup custom port
-    usage: /mineweb port <port>
+    usage: /linksite port <port>
     permission: mineweb.port

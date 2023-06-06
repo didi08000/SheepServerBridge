@@ -142,7 +142,7 @@ public class BukkitCore extends JavaPlugin implements ICore {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		if (cmd.getName().equalsIgnoreCase("mineweb")) {
+		if (cmd.getName().equalsIgnoreCase("linksite")) {
 			if (args.length == 1 && args[0].equalsIgnoreCase("reset")) {
 				if ((sender instanceof Player) && (!sender.isOp()) && (!sender.hasPermission("mineweb.port")))
 					return false;
